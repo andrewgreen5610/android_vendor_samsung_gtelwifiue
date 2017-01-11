@@ -278,7 +278,6 @@ PRODUCT_COPY_FILES += \
 	$(PROPRIETARY_PATH)/bin/netmgrd:system/bin/netmgrd \
 	$(PROPRIETARY_PATH)/bin/ftm_ptt:system/bin/ftm_ptt \
 	$(PROPRIETARY_PATH)/bin/ptt_socket_app:system/bin/ptt_socket_app \
-	$(PROPRIETARY_PATH)/lib/libqsap_sdk.so:system/lib/libqsap_sdk.so \
 	$(PROPRIETARY_PATH)/bin/port-bridge:system/bin/port-bridge \
 	$(PROPRIETARY_PATH)/bin/qmuxd:system/bin/qmuxd \
 	$(PROPRIETARY_PATH)/bin/radish:system/bin/radish \
