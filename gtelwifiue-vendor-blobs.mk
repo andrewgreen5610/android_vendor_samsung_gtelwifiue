@@ -368,5 +368,4 @@ PRODUCT_COPY_FILES += \
 
 # FM Radio
 PRODUCT_COPY_FILES += \
-	$(PROPRIETARY_PATH)/bin/fm_qsoc_patches:system/bin/fm_qsoc_patches \
 	$(PROPRIETARY_PATH)/bin/fmconfig:system/bin/fmconfig
