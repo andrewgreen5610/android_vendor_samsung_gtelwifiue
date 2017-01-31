@@ -53,6 +53,7 @@ PRODUCT_COPY_FILES += \
 	$(PROPRIETARY_PATH)/lib/libqomx_core.so:system/lib/libqomx_core.so \
 	$(PROPRIETARY_PATH)/lib/libseccameracore.so:system/lib/libseccameracore.so \
 	$(PROPRIETARY_PATH)/lib/libseccamera_jni.so:system/lib/libseccamera_jni.so \
+	$(PROPRIETARY_PATH)/lib/libsecnativefeature.so:system/lib/libsecnativefeature.so \
 	$(PROPRIETARY_PATH)/vendor/lib/libjpegdhw.so:system/vendor/lib/libjpegdhw.so \
 	$(PROPRIETARY_PATH)/vendor/lib/libjpegehw.so:system/vendor/lib/libjpegehw.so \
 	$(PROPRIETARY_PATH)/vendor/lib/libmmcamera2_c2d_module.so:system/vendor/lib/libmmcamera2_c2d_module.so \
@@ -264,15 +265,10 @@ PRODUCT_COPY_FILES += \
 	$(PROPRIETARY_PATH)/vendor/lib/libvcel.so:system/vendor/lib/libvcel.so \
 	$(PROPRIETARY_PATH)/vendor/lib/libvoice-svc.so:system/vendor/lib/libvoice-svc.so
 	
-# RIL
+# RIL needed for audio
 PRODUCT_COPY_FILES += \
-	$(PROPRIETARY_PATH)/lib/libsecnativefeature.so:system/lib/libsecnativefeature.so \
 	$(PROPRIETARY_PATH)/lib/libaudio-ril.so:system/lib/libaudio-ril.so \
-	$(PROPRIETARY_PATH)/lib/libsecril-client.so:system/lib/libsecril-client.so \
-	$(PROPRIETARY_PATH)/lib/libreference-ril.so:system/lib/libreference-ril.so \
-	$(PROPRIETARY_PATH)/bin/rild:system/bin/rild \
-	$(PROPRIETARY_PATH)/lib/libril.so:system/lib/libril.so \
-	$(PROPRIETARY_PATH)/lib/librilutils.so:system/lib/librilutils.so
+	$(PROPRIETARY_PATH)/lib/libsecril-client.so:system/lib/libsecril-client.so
 
 # Radio
 PRODUCT_COPY_FILES += \
