@@ -21,7 +21,6 @@ PRODUCT_COPY_FILES += \
 # Sensors
 PRODUCT_COPY_FILES += \
 	$(PROPRIETARY_PATH)/lib/hw/sensors.msm8916.so:system/lib/hw/sensors.msm8916.so
-#	$(PROPRIETARY_PATH)/lib/libsensorservice.so:system/lib/libsensorservice.so
 	
 ## Camera
 PRODUCT_COPY_FILES += \
