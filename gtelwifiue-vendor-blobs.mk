@@ -38,9 +38,12 @@ PRODUCT_COPY_FILES += \
 	$(PROPRIETARY_PATH)/lib/libAl_Awb.so:system/lib/libAl_Awb.so \
 	$(PROPRIETARY_PATH)/lib/libAl_Awb_Sp.so:system/lib/libAl_Awb_Sp.so \
 	$(PROPRIETARY_PATH)/lib/libarccamera.so:system/lib/libarccamera.so \
+	$(PROPRIETARY_PATH)/lib/libarcsoft_panorama_burstcapture.so:system/lib/libarcsoft_panorama_burstcapture.so \
 	$(PROPRIETARY_PATH)/lib/libarcsoft_selfie_camera_lite.so:system/lib/libarcsoft_selfie_camera_lite.so \
+	$(PROPRIETARY_PATH)/lib/libarcsoft_sensorndk.so:system/lib/libarcsoft_sensorndk.so \
 	$(PROPRIETARY_PATH)/lib/libawb_algo_front_al.so:system/lib/libawb_algo_front_al.so \
 	$(PROPRIETARY_PATH)/lib/libawb_algo_rear_al.so:system/lib/libawb_algo_rear_al.so \
+	$(PROPRIETARY_PATH)/lib/libdmcFaceEngine.so:system/lib/libdmcFaceEngine.so \
 	$(PROPRIETARY_PATH)/lib/libexifa.so:system/lib/libexifa.so \
 	$(PROPRIETARY_PATH)/lib/libjpega.so:system/lib/libjpega.so \
 	$(PROPRIETARY_PATH)/lib/libmmcamera2_stats_algorithm.so:system/lib/libmmcamera2_stats_algorithm.so \
@@ -49,10 +52,15 @@ PRODUCT_COPY_FILES += \
 	$(PROPRIETARY_PATH)/lib/libmmcamera_wavelet_lib.so:system/lib/libmmcamera_wavelet_lib.so \
 	$(PROPRIETARY_PATH)/lib/libmmjpeg_interface.so:system/lib/libmmjpeg_interface.so \
 	$(PROPRIETARY_PATH)/lib/libmm-omxcore.so:system/lib/libmm-omxcore.so \
+	$(PROPRIETARY_PATH)/lib/libQjpeg.so:system/lib/libQjpeg.so \
 	$(PROPRIETARY_PATH)/lib/libqomx_core.so:system/lib/libqomx_core.so \
 	$(PROPRIETARY_PATH)/lib/libseccameracore.so:system/lib/libseccameracore.so \
 	$(PROPRIETARY_PATH)/lib/libseccamera_jni.so:system/lib/libseccamera_jni.so \
+	$(PROPRIETARY_PATH)/lib/libsecface.so:system/lib/libsecface.so \
+	$(PROPRIETARY_PATH)/lib/libsecjpeginterface.so:system/lib/libsecjpeginterface.so \
+	$(PROPRIETARY_PATH)/lib/libsecjpegquram.so:system/lib/libsecjpegquram.so \
 	$(PROPRIETARY_PATH)/lib/libsecnativefeature.so:system/lib/libsecnativefeature.so \
+	$(PROPRIETARY_PATH)/lib/libsupershot.so:system/lib/libsupershot.so \
 	$(PROPRIETARY_PATH)/vendor/lib/libjpegdhw.so:system/vendor/lib/libjpegdhw.so \
 	$(PROPRIETARY_PATH)/vendor/lib/libjpegehw.so:system/vendor/lib/libjpegehw.so \
 	$(PROPRIETARY_PATH)/vendor/lib/libmmcamera2_c2d_module.so:system/vendor/lib/libmmcamera2_c2d_module.so \
@@ -151,7 +159,9 @@ PRODUCT_COPY_FILES += \
 
 # Media
 PRODUCT_COPY_FILES += \
+	$(PROPRIETARY_PATH)/lib/libdivxdrmdecrypt.so:system/lib/libdivxdrmdecrypt.so \
 	$(PROPRIETARY_PATH)/lib/libOmxVdecHevc.so:system/lib/libOmxVdecHevc.so \
+	$(PROPRIETARY_PATH)/vendor/lib/libDivxDrm.so:system/vendor/lib/libDivxDrm.so \
 	$(PROPRIETARY_PATH)/vendor/lib/libExtendedExtractor.so:system/vendor/lib/libExtendedExtractor.so \
 	$(PROPRIETARY_PATH)/vendor/lib/libI420colorconvert.so:system/vendor/lib/libI420colorconvert.so \
 	$(PROPRIETARY_PATH)/vendor/lib/libmm-abl-oem.so:system/vendor/lib/libmm-abl-oem.so \
@@ -164,6 +174,7 @@ PRODUCT_COPY_FILES += \
 	$(PROPRIETARY_PATH)/vendor/lib/libOmxAacDec.so:system/vendor/lib/libOmxAacDec.so \
 	$(PROPRIETARY_PATH)/vendor/lib/libOmxEvrcDec.so:system/vendor/lib/libOmxEvrcDec.so \
 	$(PROPRIETARY_PATH)/vendor/lib/libOmxQcelp13Dec.so:system/vendor/lib/libOmxQcelp13Dec.so \
+	$(PROPRIETARY_PATH)/vendor/lib/libSHIMDivxDrm.so:system/vendor/lib/libSHIMDivxDrm.so \
 	$(PROPRIETARY_PATH)/vendor/lib/libqomx_jpegdec.so:system/vendor/lib/libqomx_jpegdec.so \
 	$(PROPRIETARY_PATH)/vendor/media/LMspeed_508.emd:system/vendor/media/LMspeed_508.emd \
 	$(PROPRIETARY_PATH)/vendor/media/PFFprec_600.emd:system/vendor/media/PFFprec_600.emd
@@ -207,6 +218,7 @@ PRODUCT_COPY_FILES += \
 	$(PROPRIETARY_PATH)/bin/otp_server:system/bin/otp_server \
 	$(PROPRIETARY_PATH)/vendor/bin/audioflacapp:system/vendor/bin/audioflacapp \
 	$(PROPRIETARY_PATH)/lib/libedmnativehelper.so:system/lib/libedmnativehelper.so \
+	$(PROPRIETARY_PATH)/lib/libquramresize.so:system/lib/libquramresize.so \
 	$(PROPRIETARY_PATH)/lib/libSecMMCodec.so:system/lib/libSecMMCodec.so \
 	$(PROPRIETARY_PATH)/vendor/lib/libDiagService.so:system/vendor/lib/libDiagService.so \
 	$(PROPRIETARY_PATH)/vendor/lib/libWVStreamControlAPI_L1.so:system/vendor/lib/libWVStreamControlAPI_L1.so \
