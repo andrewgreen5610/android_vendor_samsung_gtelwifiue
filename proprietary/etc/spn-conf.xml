@@ -92,11 +92,11 @@ examples:
     <spnOverride numeric="22234" fake_home_on="22201"/> <!-- BT Italia @ I TIM-->
 
 <!-- Belgium Telent - Proximus and Mobistar-->
-    <spnOverride numeric="20605" spn_display_rule="SPN_RULE_SHOW_SPN" spn_override_only_on="20605,20610" fake_home_on="20610"/>
+    <spnOverride numeric="20605" spn_display_rule="SPN_RULE_SHOW_SPN" spn_override_only_on="20605,20610,20620" fake_home_on="20610,20620"/>
     <spnOverride numeric="20601" imsi_subset="889" spn_display_rule="SPN_RULE_SHOW_SPN" spn="Telenet" spn_override_only_on="20601" fake_roaming_on="20601"/>
 
 <!-- Denmark -->
-    <spnOverride numeric="23806" fake_home_on="23801" spn_display_rule="SPN_RULE_SHOW_SPN" spn_override_only_on="238"/> <!-- H3G @ TDC-->
+    <spnOverride numeric="23806" fake_home_on="23820,23866" spn_display_rule="SPN_RULE_SHOW_SPN" spn_override_only_on="238"/> <!-- H3G @ TDC-->
 
     <spnOverride numeric="23802" spn_display_rule="SPN_RULE_SHOW_SPN" spn_override_only_on="238"/>
     <spnOverride numeric="23820" spn_display_rule="SPN_RULE_SHOW_SPN" spn_override_only_on="238" fake_home_on="23866"/>
@@ -123,10 +123,10 @@ examples:
     <spnOverride numeric="72402" fake_home_on="72402,72403,72404"/>
     <spnOverride numeric="72403" fake_home_on="72402,72403,72404"/>
     <spnOverride numeric="72404" fake_home_on="72402,72403,72404"/>
-    <spnOverride numeric="72410" spn_display_rule="SPN_RULE_SHOW_SPN" fake_home_on="72410,72411,72406,72423"/>
-    <spnOverride numeric="72411" spn_display_rule="SPN_RULE_SHOW_SPN" fake_home_on="72410,72411,72406,72423"/>
-    <spnOverride numeric="72406" spn_display_rule="SPN_RULE_SHOW_SPN" fake_home_on="72410,72411,72406,72423"/>
-    <spnOverride numeric="72423" spn_display_rule="SPN_RULE_SHOW_SPN" fake_home_on="72410,72411,72406,72423"/>
+    <spnOverride numeric="72410" spn_display_rule="SPN_RULE_SHOW_SPN" spn_override_only_on="72410,72411,72406,72423" fake_home_on="72410,72411,72406,72423"/>
+    <spnOverride numeric="72411" spn_display_rule="SPN_RULE_SHOW_SPN" spn_override_only_on="72410,72411,72406,72423" fake_home_on="72410,72411,72406,72423"/>
+    <spnOverride numeric="72406" spn_display_rule="SPN_RULE_SHOW_SPN" spn_override_only_on="72410,72411,72406,72423" fake_home_on="72410,72411,72406,72423"/>
+    <spnOverride numeric="72423" spn_display_rule="SPN_RULE_SHOW_SPN" spn_override_only_on="72410,72411,72406,72423" fake_home_on="72410,72411,72406,72423"/>
     <spnOverride numeric="72416" fake_home_on="72416,72424,72431"/>
     <spnOverride numeric="72424" fake_home_on="72416,72424,72431"/>
     <spnOverride numeric="72431" fake_home_on="72416,72424,72431"/>
@@ -159,7 +159,7 @@ examples:
     <spnOverride numeric="33805" fake_home_on="33805,338050"/>
     <spnOverride numeric="73007" fake_home_on="73002"/>
     <spnOverride numeric="73008" fake_home_on="73002"/>
-    <spnOverride numeric="73009" fake_home_on="73001,73010"/>
+    <spnOverride numeric="73009" fake_home_on="73001,73003,73010"/>
 
 <!-- SEAU Austrailia -->
     <spnOverride numeric="50502" imsi_subset="9" spn_display_rule="SPN_RULE_SHOW_SPN" spn_override_only_on="50502"/>
@@ -198,6 +198,7 @@ examples:
     <spnOverride numeric="23205" fake_home_on="23203,23210"/>  <!-- H3G Network -->
     <spnOverride numeric="23213" fake_home_on="23203,23205,23210"/> <!-- UPC Network -->
     <spnOverride numeric="23217" fake_home_on="23203,23205,23210"/> <!-- spusu Network -->
+    <spnOverride numeric="23219" fake_home_on="23203,23205,23210"/> <!-- Tele2 Network -->
 
 <!-- 3IE Ireland -->
     <spnOverride numeric="27205" fake_home_on="27201,27202"/> <!-- 3IE @ Vodafone IE Network-->
@@ -221,7 +222,7 @@ examples:
 
 <!-- Philippine -->
     <spnOverride numeric="51518" spn_display_rule="SPN_RULE_SHOW_SPN" spn_override_only_on="51503"/>  <!--red mobile -->
-    <spnOverride numeric="51505" spn_display_rule="SPN_RULE_SHOW_SPN" spn="SUN" spn_override_only_on="51503,51505"/>  <!--Sun Cellular -->
+    <spnOverride numeric="51505" spn_display_rule="SPN_RULE_SHOW_SPN" spn="Sun" spn_override_only_on="51503"/>  <!--Sun Cellular -->
     <spnOverride numeric="515034" spn_display_rule="SPN_RULE_SHOW_SPN" spn="SUN" spn_override_only_on="51503,515034"/>  <!--Sun Bruno -->
     <spnOverride numeric="515035" spn_display_rule="SPN_RULE_SHOW_SPN" spn="SUN" spn_override_only_on="51503,515035"/>  <!--Sun Bruno -->
     <spnOverride numeric="515036" spn_display_rule="SPN_RULE_SHOW_SPN" spn="SUN" spn_override_only_on="51503,515036"/>  <!--Sun Bruno -->

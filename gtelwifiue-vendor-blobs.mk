@@ -20,7 +20,8 @@ PRODUCT_COPY_FILES += \
 
 # Sensors
 PRODUCT_COPY_FILES += \
-	$(PROPRIETARY_PATH)/lib/hw/sensors.msm8916.so:system/lib/hw/sensors.msm8916.so
+	$(PROPRIETARY_PATH)/lib/hw/sensors.msm8916.so:system/lib/hw/sensors.msm8916.so \
+	$(PROPRIETARY_PATH)/vendor/lib/libcalmodule_gyroscope.so:system/vendor/lib/libcalmodule_gyroscope.so
 	
 ## Camera
 PRODUCT_COPY_FILES += \
@@ -40,20 +41,20 @@ PRODUCT_COPY_FILES += \
 	$(PROPRIETARY_PATH)/lib/libarccamera.so:system/lib/libarccamera.so \
 	$(PROPRIETARY_PATH)/lib/libarcsoft_panorama_burstcapture.so:system/lib/libarcsoft_panorama_burstcapture.so \
 	$(PROPRIETARY_PATH)/lib/libarcsoft_selfie_camera_lite.so:system/lib/libarcsoft_selfie_camera_lite.so \
-	$(PROPRIETARY_PATH)/lib/libarcsoft_sensorndk.so:system/lib/libarcsoft_sensorndk.so \
 	$(PROPRIETARY_PATH)/lib/libawb_algo_front_al.so:system/lib/libawb_algo_front_al.so \
 	$(PROPRIETARY_PATH)/lib/libawb_algo_rear_al.so:system/lib/libawb_algo_rear_al.so \
 	$(PROPRIETARY_PATH)/lib/libdmcFaceEngine.so:system/lib/libdmcFaceEngine.so \
 	$(PROPRIETARY_PATH)/lib/libexifa.so:system/lib/libexifa.so \
 	$(PROPRIETARY_PATH)/lib/libjpega.so:system/lib/libjpega.so \
 	$(PROPRIETARY_PATH)/lib/libmmcamera2_stats_algorithm.so:system/lib/libmmcamera2_stats_algorithm.so \
-	$(PROPRIETARY_PATH)/lib/libmmcamera_cac2_lib.so:system/lib/libmmcamera_cac2_lib.so \
+	$(PROPRIETARY_PATH)/lib/libmmcamera_cac2_lib_13M.so:system/lib/libmmcamera_cac2_lib_13M.so \
 	$(PROPRIETARY_PATH)/lib/libmmcamera_interface.so:system/lib/libmmcamera_interface.so \
 	$(PROPRIETARY_PATH)/lib/libmmcamera_wavelet_lib.so:system/lib/libmmcamera_wavelet_lib.so \
 	$(PROPRIETARY_PATH)/lib/libmmjpeg_interface.so:system/lib/libmmjpeg_interface.so \
 	$(PROPRIETARY_PATH)/lib/libmm-omxcore.so:system/lib/libmm-omxcore.so \
 	$(PROPRIETARY_PATH)/lib/libQjpeg.so:system/lib/libQjpeg.so \
 	$(PROPRIETARY_PATH)/lib/libqomx_core.so:system/lib/libqomx_core.so \
+	$(PROPRIETARY_PATH)/lib/libmm-omxcore.so:system/lib/libmm-omxcore.so \
 	$(PROPRIETARY_PATH)/lib/libseccameracore.so:system/lib/libseccameracore.so \
 	$(PROPRIETARY_PATH)/lib/libseccamera_jni.so:system/lib/libseccamera_jni.so \
 	$(PROPRIETARY_PATH)/lib/libsecface.so:system/lib/libsecface.so \
@@ -68,14 +69,16 @@ PRODUCT_COPY_FILES += \
 	$(PROPRIETARY_PATH)/vendor/lib/libmmcamera2_frame_algorithm.so:system/vendor/lib/libmmcamera2_frame_algorithm.so \
 	$(PROPRIETARY_PATH)/vendor/lib/libmmcamera2_iface_modules.so:system/vendor/lib/libmmcamera2_iface_modules.so \
 	$(PROPRIETARY_PATH)/vendor/lib/libmmcamera2_imglib_modules.so:system/vendor/lib/libmmcamera2_imglib_modules.so \
-	$(PROPRIETARY_PATH)/vendor/lib/libmmcamera2_isp_modules.so:system/vendor/lib/libmmcamera2_isp_modules.so \
 	$(PROPRIETARY_PATH)/vendor/lib/libmmcamera2_is.so:system/vendor/lib/libmmcamera2_is.so \
+	$(PROPRIETARY_PATH)/vendor/lib/libmmcamera2_isp_modules.so:system/vendor/lib/libmmcamera2_isp_modules.so \
 	$(PROPRIETARY_PATH)/vendor/lib/libmmcamera2_pproc_modules.so:system/vendor/lib/libmmcamera2_pproc_modules.so \
+	$(PROPRIETARY_PATH)/vendor/lib/libmmcamera2_q3a_core.so:system/vendor/lib/libmmcamera2_q3a_core.so \
 	$(PROPRIETARY_PATH)/vendor/lib/libmmcamera2_sensor_modules.so:system/vendor/lib/libmmcamera2_sensor_modules.so \
 	$(PROPRIETARY_PATH)/vendor/lib/libmmcamera2_stats_modules.so:system/vendor/lib/libmmcamera2_stats_modules.so \
 	$(PROPRIETARY_PATH)/vendor/lib/libmmcamera2_vpe_module.so:system/vendor/lib/libmmcamera2_vpe_module.so \
 	$(PROPRIETARY_PATH)/vendor/lib/libmmcamera2_wnr_module.so:system/vendor/lib/libmmcamera2_wnr_module.so \
 	$(PROPRIETARY_PATH)/vendor/lib/libmmcamera_dw_dw9806b_eeprom.so:system/vendor/lib/libmmcamera_dw_dw9806b_eeprom.so \
+	$(PROPRIETARY_PATH)/vendor/lib/libmmcamera_dw_dw9807_eeprom.so:system/vendor/lib/libmmcamera_dw_dw9807_eeprom.so \
 	$(PROPRIETARY_PATH)/vendor/lib/libmmcamera_faceproc.so:system/vendor/lib/libmmcamera_faceproc.so \
 	$(PROPRIETARY_PATH)/vendor/lib/libmmcamera_hdr_gb_lib.so:system/vendor/lib/libmmcamera_hdr_gb_lib.so \
 	$(PROPRIETARY_PATH)/vendor/lib/libmmcamera_hdr_lib.so:system/vendor/lib/libmmcamera_hdr_lib.so \
@@ -83,14 +86,18 @@ PRODUCT_COPY_FILES += \
 	$(PROPRIETARY_PATH)/vendor/lib/libmmcamera_imglib.so:system/vendor/lib/libmmcamera_imglib.so \
 	$(PROPRIETARY_PATH)/vendor/lib/libmmcamera_lsi_s5k5e3yx_eeprom.so:system/vendor/lib/libmmcamera_lsi_s5k5e3yx_eeprom.so \
 	$(PROPRIETARY_PATH)/vendor/lib/libmmcamera_m24128s_eeprom.so:system/vendor/lib/libmmcamera_m24128s_eeprom.so \
+	$(PROPRIETARY_PATH)/vendor/lib/libmmcamera_pdaf.so:system/vendor/lib/libmmcamera_pdaf.so \
+	$(PROPRIETARY_PATH)/vendor/lib/libmmcamera_pdafcamif.so:system/vendor/lib/libmmcamera_pdafcamif.so \
 	$(PROPRIETARY_PATH)/vendor/lib/libmmcamera_rohm_brce064gwz_eeprom.so:system/vendor/lib/libmmcamera_rohm_brce064gwz_eeprom.so \
 	$(PROPRIETARY_PATH)/vendor/lib/libmmcamera_s5k4ecgx.so:system/vendor/lib/libmmcamera_s5k4ecgx.so \
 	$(PROPRIETARY_PATH)/vendor/lib/libmmcamera_silicon_sr544_eeprom.so:system/vendor/lib/libmmcamera_silicon_sr544_eeprom.so \
+	$(PROPRIETARY_PATH)/vendor/lib/libmmcamera_silicon_sr552_eeprom.so:system/vendor/lib/libmmcamera_silicon_sr552_eeprom.so \
 	$(PROPRIETARY_PATH)/vendor/lib/libmmcamera_sr200pc20.so:system/vendor/lib/libmmcamera_sr200pc20.so \
 	$(PROPRIETARY_PATH)/vendor/lib/libmmcamera_sunny_p12v01m_eeprom.so:system/vendor/lib/libmmcamera_sunny_p12v01m_eeprom.so \
 	$(PROPRIETARY_PATH)/vendor/lib/libmmcamera_sunny_p5v23c_eeprom.so:system/vendor/lib/libmmcamera_sunny_p5v23c_eeprom.so \
 	$(PROPRIETARY_PATH)/vendor/lib/libmmcamera_tintless_algo.so:system/vendor/lib/libmmcamera_tintless_algo.so \
 	$(PROPRIETARY_PATH)/vendor/lib/libmmcamera_tintless_bg_pca_algo.so:system/vendor/lib/libmmcamera_tintless_bg_pca_algo.so \
+	$(PROPRIETARY_PATH)/vendor/lib/libmmcamera_zc533_eeprom.so:system/vendor/lib/libmmcamera_zc533_eeprom.so \
 	$(PROPRIETARY_PATH)/vendor/lib/libmmipl.so:system/vendor/lib/libmmipl.so \
 	$(PROPRIETARY_PATH)/vendor/lib/libmmjpeg.so:system/vendor/lib/libmmjpeg.so \
 	$(PROPRIETARY_PATH)/vendor/lib/libmmqjpeg_codec.so:system/vendor/lib/libmmqjpeg_codec.so \
@@ -103,6 +110,7 @@ PRODUCT_COPY_FILES += \
 	$(PROPRIETARY_PATH)/bin/loc_launcher:system/bin/loc_launcher \
 	$(PROPRIETARY_PATH)/lib/hw/gps.default.so:system/lib/hw/gps.default.so \
 	$(PROPRIETARY_PATH)/vendor/lib/hw/flp.default.so:system/vendor/lib/hw/flp.default.so \
+	$(PROPRIETARY_PATH)/vendor/lib/libflp.so:system/vendor/lib/libflp.so \
 	$(PROPRIETARY_PATH)/vendor/lib/libgeofence.so:system/vendor/lib/libgeofence.so \
 	$(PROPRIETARY_PATH)/vendor/lib/libizat_core.so:system/vendor/lib/libizat_core.so \
 	$(PROPRIETARY_PATH)/vendor/lib/liblbs_core.so:system/vendor/lib/liblbs_core.so \
@@ -135,10 +143,8 @@ PRODUCT_COPY_FILES += \
 	$(PROPRIETARY_PATH)/lib/libsomxwmad.so:system/lib/libsomxwmad.so \
 	$(PROPRIETARY_PATH)/lib/libsomxwmv7d.so:system/lib/libsomxwmv7d.so \
 	$(PROPRIETARY_PATH)/lib/libsomxwmv8d.so:system/lib/libsomxwmv8d.so \
-	$(PROPRIETARY_PATH)/lib/libdivxdrmdecrypt.so:system/lib/libdivxdrmdecrypt.so \
 	$(PROPRIETARY_PATH)/lib/libOmxVdecHevc.so:system/lib/libOmxVdecHevc.so \
 	$(PROPRIETARY_PATH)/vendor/lib/libhwdaphal.so:system/vendor/lib/libhwdaphal.so \
-	$(PROPRIETARY_PATH)/vendor/lib/libDivxDrm.so:system/vendor/lib/libDivxDrm.so \
 	$(PROPRIETARY_PATH)/vendor/lib/libExtendedExtractor.so:system/vendor/lib/libExtendedExtractor.so \
 	$(PROPRIETARY_PATH)/vendor/lib/libI420colorconvert.so:system/vendor/lib/libI420colorconvert.so \
 	$(PROPRIETARY_PATH)/vendor/lib/libmm-abl-oem.so:system/vendor/lib/libmm-abl-oem.so \
@@ -151,18 +157,19 @@ PRODUCT_COPY_FILES += \
 	$(PROPRIETARY_PATH)/vendor/lib/libOmxAacDec.so:system/vendor/lib/libOmxAacDec.so \
 	$(PROPRIETARY_PATH)/vendor/lib/libOmxEvrcDec.so:system/vendor/lib/libOmxEvrcDec.so \
 	$(PROPRIETARY_PATH)/vendor/lib/libOmxQcelp13Dec.so:system/vendor/lib/libOmxQcelp13Dec.so \
-	$(PROPRIETARY_PATH)/vendor/lib/libSHIMDivxDrm.so:system/vendor/lib/libSHIMDivxDrm.so \
 	$(PROPRIETARY_PATH)/vendor/lib/libqomx_jpegdec.so:system/vendor/lib/libqomx_jpegdec.so \
 	$(PROPRIETARY_PATH)/vendor/media/LMspeed_508.emd:system/vendor/media/LMspeed_508.emd \
 	$(PROPRIETARY_PATH)/vendor/media/PFFprec_600.emd:system/vendor/media/PFFprec_600.emd
 
 # Perf
 PRODUCT_COPY_FILES += \
-	$(PROPRIETARY_PATH)/bin/perfd:system/bin/perfd \
+	$(PROPRIETARY_PATH)/vendor/bin/perfd:system/bin/perfd \
+	$(PROPRIETARY_PATH)/vendor/lib/libqti-at.so:system/vendor/lib/libqti-at.so \
 	$(PROPRIETARY_PATH)/vendor/lib/libqti-perfd-client.so:system/vendor/lib/libqti-perfd-client.so
 
 # Postprocessing
 PRODUCT_COPY_FILES += \
+	$(PROPRIETARY_PATH)/vendor/lib/libmm-als.so:system/vendor/lib/libmm-als.so \
 	$(PROPRIETARY_PATH)/vendor/lib/libmm-abl.so:system/vendor/lib/libmm-abl.so \
 	$(PROPRIETARY_PATH)/vendor/lib/libdisp-aba.so:system/vendor/lib/libdisp-aba.so
 	
@@ -173,6 +180,7 @@ PRODUCT_COPY_FILES += \
 	$(PROPRIETARY_PATH)/vendor/lib/libidl.so:system/vendor/lib/libidl.so \
 	$(PROPRIETARY_PATH)/vendor/lib/libqcci_legacy.so:system/vendor/lib/libqcci_legacy.so \
 	$(PROPRIETARY_PATH)/vendor/lib/libqmi_cci.so:system/vendor/lib/libqmi_cci.so \
+	$(PROPRIETARY_PATH)/vendor/lib/libqmi_client_helper.so:system/vendor/lib/libqmi_client_helper.so \
 	$(PROPRIETARY_PATH)/vendor/lib/libqmi_client_qmux.so:system/vendor/lib/libqmi_client_qmux.so \
 	$(PROPRIETARY_PATH)/vendor/lib/libqmi_common_so.so:system/vendor/lib/libqmi_common_so.so \
 	$(PROPRIETARY_PATH)/vendor/lib/libqmi_csi.so:system/vendor/lib/libqmi_csi.so \
@@ -197,7 +205,16 @@ PRODUCT_COPY_FILES += \
 	$(PROPRIETARY_PATH)/lib/libedmnativehelper.so:system/lib/libedmnativehelper.so \
 	$(PROPRIETARY_PATH)/lib/libquramresize.so:system/lib/libquramresize.so \
 	$(PROPRIETARY_PATH)/lib/libSecMMCodec.so:system/lib/libSecMMCodec.so \
+	$(PROPRIETARY_PATH)/lib64/libSecMMCodec.so:system/lib64/libSecMMCodec.so \
 	$(PROPRIETARY_PATH)/vendor/lib/libDiagService.so:system/vendor/lib/libDiagService.so \
+	$(PROPRIETARY_PATH)/vendor/lib/libSampleAuthJNI.so:system/vendor/lib/libSampleAuthJNI.so \
+	$(PROPRIETARY_PATH)/vendor/lib/libSecureSampleAuthClient.so:system/vendor/lib/libSecureSampleAuthClient.so \
+	$(PROPRIETARY_PATH)/vendor/lib/libSecureSampleAuthJNI.so:system/vendor/lib/libSecureSampleAuthJNI.so \
+	$(PROPRIETARY_PATH)/vendor/lib/libqc-opt.so:system/vendor/lib/libqc-opt.so \
+	$(PROPRIETARY_PATH)/vendor/lib/libsmwrapper.so:system/vendor/lib/libsmwrapper.so \
+	$(PROPRIETARY_PATH)/vendor/lib/libsregex.so:system/vendor/lib/libsregex.so \
+	$(PROPRIETARY_PATH)/vendor/lib/libtar.so:system/vendor/lib/libtar.so \
+	$(PROPRIETARY_PATH)/vendor/lib/libwms.so:system/vendor/lib/libwms.so \
 	$(PROPRIETARY_PATH)/vendor/lib/libbccQTI.so:system/vendor/lib/libbccQTI.so \
 	$(PROPRIETARY_PATH)/vendor/lib/libCommandSvc.so:system/vendor/lib/libCommandSvc.so \
 	$(PROPRIETARY_PATH)/vendor/lib/lib-dplmedia.so:system/vendor/lib/lib-dplmedia.so \
@@ -215,6 +232,7 @@ PRODUCT_COPY_FILES += \
 	$(PROPRIETARY_PATH)/vendor/lib/libmmiipstreammmihttp.so:system/vendor/lib/libmmiipstreammmihttp.so \
 	$(PROPRIETARY_PATH)/vendor/lib/libmmipstreamaal.so:system/vendor/lib/libmmipstreamaal.so \
 	$(PROPRIETARY_PATH)/vendor/lib/libmmipstreamnetwork.so:system/vendor/lib/libmmipstreamnetwork.so \
+	$(PROPRIETARY_PATH)/vendor/lib/libmmparser_lite.so:system/vendor/lib/libmmparser_lite.so \
 	$(PROPRIETARY_PATH)/vendor/lib/libmmipstreamsourcehttp.so:system/vendor/lib/libmmipstreamsourcehttp.so \
 	$(PROPRIETARY_PATH)/vendor/lib/libmmipstreamutils.so:system/vendor/lib/libmmipstreamutils.so \
 	$(PROPRIETARY_PATH)/vendor/lib/libmmQSM.so:system/vendor/lib/libmmQSM.so \
@@ -224,6 +242,8 @@ PRODUCT_COPY_FILES += \
 	$(PROPRIETARY_PATH)/vendor/lib/libscve.so:system/vendor/lib/libscve.so \
 	$(PROPRIETARY_PATH)/vendor/lib/libsubsystem_control.so:system/vendor/lib/libsubsystem_control.so \
 	$(PROPRIETARY_PATH)/vendor/lib/libSubSystemShutdown.so:system/vendor/lib/libSubSystemShutdown.so \
+	$(PROPRIETARY_PATH)/vendor/lib/libtzdrmgenprov.so:system/vendor/lib/libtzdrmgenprov.so \
+	$(PROPRIETARY_PATH)/vendor/lib/libtzplayready.so:system/vendor/lib/libtzplayready.so \
 	$(PROPRIETARY_PATH)/vendor/lib/libvcel.so:system/vendor/lib/libvcel.so \
 	$(PROPRIETARY_PATH)/vendor/lib/libvoice-svc.so:system/vendor/lib/libvoice-svc.so
 	
@@ -255,7 +275,7 @@ PRODUCT_COPY_FILES += \
 
 # Thermal
 PRODUCT_COPY_FILES += \
-	$(PROPRIETARY_PATH)/bin/thermal-engine:system/bin/thermal-engine \
+	$(PROPRIETARY_PATH)/vendor/bin/thermal-engine:system/bin/thermal-engine \
 	$(PROPRIETARY_PATH)/vendor/lib/libthermalclient.so:system/vendor/lib/libthermalclient.so \
 	$(PROPRIETARY_PATH)/vendor/lib/libthermalioctl.so:system/vendor/lib/libthermalioctl.so
 		
@@ -263,6 +283,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
 	$(PROPRIETARY_PATH)/bin/time_daemon:system/bin/time_daemon \
 	$(PROPRIETARY_PATH)/vendor/lib/libTimeService.so:system/vendor/lib/libTimeService.so \
+	$(PROPRIETARY_PATH)/lib/libcommon_time_client.so:system/lib/libcommon_time_client.so \
 	$(PROPRIETARY_PATH)/vendor/lib/libtime_genoff.so:system/vendor/lib/libtime_genoff.so
 	
 # Other
@@ -284,9 +305,9 @@ PRODUCT_COPY_FILES += \
 	$(PROPRIETARY_PATH)/lib/lib_DNSe_EP_ver216c.so:system/lib/lib_DNSe_EP_ver216c.so \
 	$(PROPRIETARY_PATH)/lib/lib_SA_GoogleFX_ver119k.so:system/lib/lib_SA_GoogleFX_ver119k.so \
 	$(PROPRIETARY_PATH)/lib/lib_SoundAlive_play_plus_ver126a.so:system/lib/lib_SoundAlive_play_plus_ver126a.so \
-	$(PROPRIETARY_PATH)/lib/libSamsungMusic_tablet_v4.so:system/lib/libSamsungMusic_tablet_v4.so \
+	$(PROPRIETARY_PATH)/lib/libSamsungMusic_tablet_v4m.so:system/lib/libSamsungMusic_tablet_v4m.so \
 	$(PROPRIETARY_PATH)/lib/libSamsungAudioEngine_SideSync.so:system/lib/libSamsungAudioEngine_SideSync.so \
-	$(PROPRIETARY_PATH)/lib/lib_SamsungVAD_v01008.so:system/lib/lib_SamsungVAD_v01008.so \
+	$(PROPRIETARY_PATH)/lib/lib_SamsungVAD_v01009.so:system/lib/lib_SamsungVAD_v01009.so \
 	$(PROPRIETARY_PATH)/lib/libmysound.so:system/lib/libmysound.so \
 	$(PROPRIETARY_PATH)/lib/libsamsungearcare.so:system/lib/libsamsungearcare.so \
 	$(PROPRIETARY_PATH)/lib/libsamsungeffect.so:system/lib/libsamsungeffect.so \
@@ -302,9 +323,10 @@ PRODUCT_COPY_FILES += \
 	$(PROPRIETARY_PATH)/lib/libsamsungtts.so:system/lib/libsamsungtts.so \
 	$(PROPRIETARY_PATH)/lib/libsamsungvad.so:system/lib/libsamsungvad.so \
 	$(PROPRIETARY_PATH)/lib/libsamsungVoipResampler.so:system/lib/libsamsungVoipResampler.so \
+	$(PROPRIETARY_PATH)/lib/libsecaudioinfo.so:system/lib/libsecaudioinfo.so \
 	$(PROPRIETARY_PATH)/lib/lib_soundaliveresampler.so:system/lib/lib_soundaliveresampler.so \
 	$(PROPRIETARY_PATH)/lib/lib_SoundAlive_SRC192_ver205.so:system/lib/lib_SoundAlive_SRC192_ver205.so \
-	$(PROPRIETARY_PATH)/lib/lib_SoundBooster_ver609a.so:system/lib/lib_SoundBooster_ver609a.so \
+	$(PROPRIETARY_PATH)/lib/lib_SoundBooster_ver610.so:system/lib/lib_SoundBooster_ver610.so \
 	$(PROPRIETARY_PATH)/lib/lib_SoundAlive_3DPosition_ver107.so:system/lib/lib_SoundAlive_3DPosition_ver107.so \
 	$(PROPRIETARY_PATH)/lib/soundfx/libaudioeffectoffload.so:system/lib/soundfx/libaudioeffectoffload.so \
 	$(PROPRIETARY_PATH)/lib/soundfx/libaudiosa_sec.so:system/lib/soundfx/libaudiosa_sec.so \
@@ -323,4 +345,5 @@ PRODUCT_COPY_FILES += \
 
 # FM Radio
 PRODUCT_COPY_FILES += \
+	$(PROPRIETARY_PATH)/bin/fm_qsoc_patches:system/bin/fm_qsoc_patches \
 	$(PROPRIETARY_PATH)/bin/fmconfig:system/bin/fmconfig
